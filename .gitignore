@@ -1,0 +1,16 @@
+# Build output
+bin/
+obj/
+
+# IDE settings
+.idea/          # JetBrains Rider
+.vscode/        # Visual Studio Code
+
+# User-specific files
+*.user
+*.suo
+*.sln.iml
+
+# System files
+.DS_Store
+*.log
