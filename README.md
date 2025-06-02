@@ -38,7 +38,7 @@
 ## Projects
 
 
-| Name | Description     |
-| :--- |:----------|
-| Name | Project 1 |
-| Location |           |
+| Name | Description                                                                      |
+| :--- |:---------------------------------------------------------------------------------|
+| Name | Project 1                                                                        |
+| Location | https://github.com/Dj-messup/CSCI310CG/blob/main/Projects/Project%201/Program.cs |
