@@ -1,4 +1,17 @@
-﻿//HW1 Done 
+﻿//Chica Gomes
+//HW1 Done
+//
+//Description: All of your code should be in the namespace and class HW1Types.
+//Inside of Main, create at least 4 different variables of different types (example: int, decimal, string, char)
+//and set them to some value. Print out the values with a description (using string interpolation).
+// Then change the values to something different and print out the values again.
+// Next calculate the area of a triangle using Heron's formula.
+// You can choose the values for the triangle or you can use ReadLine and Parse
+// (covered in day 4 content) to prompt for the sides of an arbitrary triangle.
+// To access square root or power, look at the Math class
+// (it's automatically available and all you'll have to do is Math.Sqrt(42) for example).
+//
+
 using System;
 
 namespace HW1Types

@@ -1,4 +1,12 @@
-﻿//HW2 in Process, need to check math of tax if I did it right
+﻿//Chica Gomes 
+//HW2 Done
+//
+// Description: Write a program to calculate taxes based on the following table,
+// ask for the number of lines to print and print out a triangle,
+// inverted triangle and square the size of the number of lines.
+//
+
+
 using System;
 
 namespace HW2Conditionals
