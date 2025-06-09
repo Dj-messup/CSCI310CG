@@ -5,13 +5,20 @@
     <projectFile>Homeworks/HW2/HW2Conditionals/HW2Conditionals.csproj</projectFile>
     <projectFile>Homeworks/HW3/HW3Arrays/HW3Arrays.csproj</projectFile>
     <projectFile>Homeworks/HW4/HW4Methods/HW4Methods.csproj</projectFile>
+    <projectFile>Homeworks/HW5/HW5Classes/HW5Classes.csproj</projectFile>
+    <projectFile>Homeworks/HW6/HW6Inheritance/HW6Inheritance.csproj</projectFile>
+    <projectFile>Homeworks/HW7/HW7Polymorphism/HW7Polymorphism.csproj</projectFile>
+    <projectFile>Homeworks/HW8/HW8OpOverloading/HW8OpOverloading.csproj</projectFile>
     <projectFile>Projects/Project 1/Project 1.csproj</projectFile>
+    <projectFile>Projects/Project 2/Project2/Project2.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aae9d9cc-6a7c-4777-ba5c-76863eb014e2" name="Changes" comment="" />
+    <list default="true" id="aae9d9cc-6a7c-4777-ba5c-76863eb014e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Homeworks/HW1/HW1Types/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Homeworks/HW2/HW2Conditionals/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Homeworks/HW3/HW3Arrays/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/chicagomes/RiderProjects/CSCI310CG/Homeworks/HW4/HW4Methods/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -72,7 +80,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.HW1Types">
+  <component name="RunManager" selected=".NET Project.Project 1">
     <configuration name="HW1Types" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -86,6 +94,7 @@
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Homeworks/HW1/HW1Types/HW1Types.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
@@ -165,6 +174,98 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="HW5Classes" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Homeworks/HW5/HW5Classes/HW5Classes.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="HW6Inheritance" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Homeworks/HW6/HW6Inheritance/HW6Inheritance.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="HW7Polymorphism" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Homeworks/HW7/HW7Polymorphism/HW7Polymorphism.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="HW8OpOverloading" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Homeworks/HW8/HW8OpOverloading/HW8OpOverloading.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Project 1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -188,6 +289,29 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Project2" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Projects/Project 2/Project2/Project2.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -202,7 +326,8 @@
       <workItem from="1748844859645" duration="2227000" />
       <workItem from="1749080562698" duration="882000" />
       <workItem from="1749171240187" duration="305000" />
-      <workItem from="1749171549408" duration="2581000" />
+      <workItem from="1749171549408" duration="4503000" />
+      <workItem from="1749187868196" duration="567000" />
     </task>
     <task id="LOCAL-00001" summary="practicing pushes">
       <option name="closed" value="true" />
@@ -284,7 +409,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748847067899</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="HW4 Progress">
+      <option name="closed" value="true" />
+      <created>1749185749936</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749185749936</updated>
+    </task>
+    <task id="LOCAL-00012" summary="comp @ 4% save push">
+      <option name="closed" value="true" />
+      <created>1749187779197</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749187779197</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +478,9 @@
     <MESSAGE value="Updated Readme" />
     <MESSAGE value="Project 1 :)" />
     <MESSAGE value="ReadMe" />
-    <option name="LAST_COMMIT_MESSAGE" value="ReadMe" />
+    <MESSAGE value="HW4 Progress" />
+    <MESSAGE value="comp @ 4% save push" />
+    <option name="LAST_COMMIT_MESSAGE" value="comp @ 4% save push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -356,13 +499,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Homeworks/HW4/HW4Methods/Program.cs</url>
-          <line>102</line>
+          <line>105</line>
           <properties documentPath="$PROJECT_DIR$/Homeworks/HW4/HW4Methods/Program.cs" containingFunctionPresentation="Method 'Main'">
             <startOffsets>
-              <option value="3518" />
+              <option value="3889" />
             </startOffsets>
             <endOffsets>
-              <option value="3634" />
+              <option value="4005" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />

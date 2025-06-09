@@ -1,55 +1,41 @@
-﻿//Chica Gomes 
-//HW5 In progress
-//
-// description: Create a simple class with at least two private variables (fields) and corresponding get/set for those
-// variables. The class should also have a constructor and at least one method in the class that does something.
-// Demonstrate your class in Main with at least 2 objects created from the class.
+﻿// Chica Gomes – HW5 finished
 
 using System;
 
-// quick lil teacher aspect for a nod to when i taught at UH 
 public class StudentProfile
 {
-    // Private fields
-    private string name;
-    private int age;
+    //private setters
+    public string Name { get; private set; }
+    public int Age     { get; private set; }
 
     // Constructor
     public StudentProfile(string name, int age)
     {
-        this.name = name;
-        this.age = age;
+        Name = name;
+        Age  = age;
     }
 
-    // Getter and Setter for Name
-    public string GetName()
+    //clener
+    public void UpdateName(string newName) => Name = newName;
+
+    public void UpdateAge(int newAge)
     {
-        return name;
+        if (newAge > 0) Age = newAge;
     }
 
-    public void SetName(string newName)
-    {
-        name = newName;
-    }
-
-    // Getter and Setter for Age
-    public int GetAge()
-    {
-        return age;
-    }
-
-    public void SetAge(int newAge)
-    {
-        if (newAge > 0)
-        {
-            age = newAge;
-        }
-    }
-
-    // Method that introduces the student
+    // Action #1 – quick intro
     public void Introduce()
     {
-        Console.WriteLine($"Aloha! I'm {name}, a {age}-year-old Computer Science major from Hawai‘i. I'm still exploring which programming language I like best!");
+        Console.WriteLine($"Aloha! I’m {Name}, a {Age}-year-old Computer Science major from Hawai‘i.");
+    }
+
+    // Action #2 – show full profile block
+    public void ShowProfile()
+    {
+        Console.WriteLine("——— Student Profile ———");
+        Console.WriteLine($"Name: {Name}");
+        Console.WriteLine($"Age : {Age}");
+        Console.WriteLine("-------------------------");
     }
 }
 
@@ -57,18 +43,19 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Create first student object (Chica!)
-        StudentProfile chica = new StudentProfile("Chica", 21);
+        // Object #1 – you
+        var chica = new StudentProfile("Chica", 21);
         chica.Introduce();
+        chica.ShowProfile();
 
-        // Create second student object (a classmate)
-        StudentProfile classmate = new StudentProfile("Noah", 24);// ask him whats his real age 
-        classmate.Introduce();
+        // Object #2 – classmate
+        var noah = new StudentProfile("Noah", 23);
+        noah.Introduce();
 
-        // Update Noah's name and age
-        classmate.SetName("NoaH K."); //i chose my friend Noah from class 
-        classmate.SetAge(24);
-        Console.WriteLine("Updated classmate info:");
-        classmate.Introduce();
+        // Tweak classmate then display again
+        noah.UpdateName("NoaH K.");
+        noah.UpdateAge(24);
+        Console.WriteLine("Updated info:");
+        noah.ShowProfile();
     }
 }
