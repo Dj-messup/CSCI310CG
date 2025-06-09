@@ -14,6 +14,47 @@ using System;
 
 namespace HW4Methods
 {
+    // Entry point first, per teacher request
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            // test values
+            string engineerName = "Uncle John";
+            int yearsExperience = 30;
+            string location = "Salt Lake City, Utah";
+            int x = 42;
+            int y = 73;
+            int n = 57;         // Fibonacci index and project code
+
+            HW4Methods engineer = new HW4Methods();
+
+            // 1. void that prints text
+            engineer.PrintEngineerIntro(engineerName, yearsExperience);
+
+            // 2. method that returns data
+            Console.WriteLine(engineer.GetRVStatus(location));
+
+            // 3. swap two numbers by reference
+            Console.WriteLine($"Before swap: x = {x}, y = {y}");
+            
+            engineer.SwapTwoNumbers(ref x, ref y);
+            
+            Console.WriteLine($"After  swap: x = {x}, y = {y}");
+
+            // 4. nth Fibonacci
+            long fib = engineer.CalculateFibonacci(n);
+            
+            Console.WriteLine($"Fibonacci({n}) = {fib}");
+
+            // 5. prime test
+            bool prime = engineer.IsPrime(n);
+            
+            Console.WriteLine($"{n} is {(prime ? "prime" : "not prime")}");
+        }
+    }
+
+    
     public class HW4Methods
     {
         // 1. Void method that outputs text based on parameters
