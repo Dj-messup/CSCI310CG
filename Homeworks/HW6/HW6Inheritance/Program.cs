@@ -1,56 +1,41 @@
-﻿//Chica Gomes
-//HW6 in progress 
-//
-//Description : Create a class for People that contains a name along with a corresponding get/set
-//(using automatic properties). Create 2 derived classes which inherit from People and each class
-//should have their own method. Demonstrate creating objects from each class and setting the name
-//along with calling the method you created for that class.
+﻿// Chica Gomes – HW6
 
 using System;
 
 namespace HW6Inheritance
 {
-    // Base class People
+    // Base class
     public class People
     {
-        // Automatic property for Name
         public string Name { get; set; }
     }
 
-    // Derived class Student
+    // Derived class #1
     public class Student : People
     {
-        // Method specific to Student
         public void Study()
         {
-            Console.WriteLine($"{Name} is studying hard for the exams!"); // yup totally not working three jobs every school year
+            Console.WriteLine($"{Name} is studying hard for the exams.");
         }
     }
 
-    // Derived class Proffessor
-    public class Proffessor : People
+    // Derived class #2
+    public class Professor : People
     {
-        // Method specific to Teacher
-        public void Proff()
+        public void Teach()
         {
-            Console.WriteLine($"{Name} is teaching a fascinating lesson!"); // i do get excited about topics to cover in CISB
+            Console.WriteLine($"{Name} is teaching a fascinating lesson.");
         }
     }
-
-    class Program
+    public class UniversityDemo   // better name than “Program”
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            // Create a Student object and set the name
-            Student student = new Student();
-            student.Name = "Chica";
+            var student = new Student { Name = "Chica" };
             student.Study();
 
-            // Create a Teacher object and set the name
-            Proffessor Proff = new Proffessor(); // fix this 
-            
-            Proffessor.Name = "Professor Alayami"; // the goat
-            Proffessor.Proff();
+            var prof = new Professor { Name = "Professor Alayami" };
+            prof.Teach();
         }
     }
 }

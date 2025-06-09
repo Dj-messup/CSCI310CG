@@ -1,61 +1,56 @@
-﻿// Chica Gomes – HW5 finished
-
-using System;
-
-public class StudentProfile
+﻿namespace HW5Classes
 {
-    //private setters
-    public string Name { get; private set; }
-    public int Age     { get; private set; }
-
-    // Constructor
-    public StudentProfile(string name, int age)
+    public class StudentProfile
     {
-        Name = name;
-        Age  = age;
+        public string Name { get; private set; }
+        public int    Age  { get; private set; }
+
+        public StudentProfile(string name, int age)
+        {
+            Name = name;
+            Age  = age;
+        }
+
+        public void UpdateName(string newName) => Name = newName;
+
+        public void UpdateAge(int newAge)
+        {
+            if (newAge > 0) Age = newAge;
+        }
+
+        public void Introduce(string hometown = null)
+        {
+            if (string.IsNullOrWhiteSpace(hometown))
+                Console.WriteLine($"Hi, I'm {Name}. I'm {Age} and I enjoy coding.");
+            else
+                Console.WriteLine($"Hi, I'm {Name} from {hometown}. I'm {Age} and I enjoy coding.");
+        }
+
+        public void ShowProfile()
+        {
+            Console.WriteLine("Student Profile");
+            Console.WriteLine($"Name: {Name}");
+            Console.WriteLine($"Age:  {Age}");
+            Console.WriteLine();
+        }
     }
 
-    //clener
-    public void UpdateName(string newName) => Name = newName;
-
-    public void UpdateAge(int newAge)
+    //nicer
+    public class UniversityDemo
     {
-        if (newAge > 0) Age = newAge;
-    }
+        public static void Main()
+        {
+            var chica = new StudentProfile("Chica", 21);
+            chica.Introduce("Hawai‘i");
+            chica.ShowProfile();
 
-    // Action – quick cute lil intro
-    public void Introduce()
-    {
-        Console.WriteLine($"Aloha! I’m {Name}, a {Age}-year-old Computer Science major from Hawai‘i.");
-    }
+            var noah = new StudentProfile("Noah", 23);
+            noah.Introduce();
 
-    // Action, show full profile block
-    public void ShowProfile()
-    {
-        Console.WriteLine("——— Student Profile ———");
-        Console.WriteLine($"Name: {Name}");
-        Console.WriteLine($"Age : {Age}");
-        Console.WriteLine("-------------------------");
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Object me
-        var chica = new StudentProfile("Chica", 21);
-        chica.Introduce();
-        chica.ShowProfile();
-
-        // Object classmate
-        var noah = new StudentProfile("Noah", 23);
-        noah.Introduce();
-
-        // Tweak classmate then display again
-        noah.UpdateName("Noah K.");
-        noah.UpdateAge(24);
-        Console.WriteLine("Updated info:");
-        noah.ShowProfile();
+            noah.UpdateName("Noah K.");
+            noah.UpdateAge(24);
+            Console.WriteLine("Updated info:");
+            noah.ShowProfile();
+        }
     }
 }
