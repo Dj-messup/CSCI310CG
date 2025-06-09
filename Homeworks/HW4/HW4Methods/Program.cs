@@ -1,64 +1,69 @@
-﻿// Chica Gomes – HW4
+﻿// Chica Gomes
+// HW4 Done
+//
+//Description: You will write several methods inside of your class:
+// Create a void which outputs some text based on the parameters.
+// Create a method that returns some sort of data back to the call
+// and then is printed out from Main.
+// Create a method that swaps two numbers via ref.
+// Create a method that finds the nth Fibonacci number (you can use a for loop or recursion)
+// and then returns that number to be printed out.
+// Create a method that determines if a number is prime or not and prints out the result from Main.
+// 
+
 using System;
 
 namespace HW4Methods
 {
-    // Entry point first, per teacher request
-    public class Program
+    public class HW4Methods
     {
-        static void Main(string[] args)
+        public static void Main()   //unused args warning
         {
-            // test values
             string engineerName = "Uncle John";
-            int yearsExperience = 30;
+            int yearsExp = 30;
             string location = "Salt Lake City, Utah";
             int x = 42;
             int y = 73;
-            int n = 57;         // Fibonacci index and project code
+            int n = 57;   // Fibonacci + prime
 
-            HW4Methods engineer = new HW4Methods();
+            var engineer = new Hw4Methods();
 
-            // 1. void that prints text
-            engineer.PrintEngineerIntro(engineerName, yearsExperience);
+            //beginning
+            engineer.PrintEngineerIntro(engineerName, yearsExp);
 
-            // 2. method that returns data
-            Console.WriteLine(engineer.GetRVStatus(location));
+            //RV status
+            Console.WriteLine(engineer.GetRvStatus(location));
 
-            // 3. swap two numbers by reference
-            Console.WriteLine($"Before swap: x = {x}, y = {y}");
-            
+            //swap
+            Console.WriteLine($"before swap: x = {x}, y = {y}");
             engineer.SwapTwoNumbers(ref x, ref y);
-            
-            Console.WriteLine($"After  swap: x = {x}, y = {y}");
+            Console.WriteLine($"after  swap: x = {x}, y = {y}");
 
-            // 4. nth Fibonacci
+            //fibonacci
             long fib = engineer.CalculateFibonacci(n);
-            
             Console.WriteLine($"Fibonacci({n}) = {fib}");
 
-            // 5. prime test
+            //prime
             bool prime = engineer.IsPrime(n);
-            
             Console.WriteLine($"{n} is {(prime ? "prime" : "not prime")}");
         }
     }
 
-    
-    public class HW4Methods
+    public class Hw4Methods
     {
-        // 1. void that prints text based on parameters
+        // intro
         public void PrintEngineerIntro(string name, int yearsExperience)
         {
             Console.WriteLine($"Meet {name}, a civil engineer with {yearsExperience} years of experience and an RV lifestyle.");
         }
 
-        // 2. returns a string to caller
-        public string GetRVStatus(string location)
+        // rv status
+        public string GetRvStatus(string location)
         {
             return $"Currently parked near {location}, sketching bridge designs.";
         }
 
-        // 3. swaps two ints by reference
+        // swap two ints
         public void SwapTwoNumbers(ref int a, ref int b)
         {
             int temp = a;
@@ -66,11 +71,13 @@ namespace HW4Methods
             b = temp;
         }
 
-        // Fibonacci
+        // fibonacci
         public long CalculateFibonacci(int n)
         {
             if (n <= 1) return n;
-            long a = 0, b = 1;
+
+            long a = 0;
+            long b = 1;
             for (int i = 2; i <= n; i++)
             {
                 long next = a + b;
@@ -80,13 +87,15 @@ namespace HW4Methods
             return b;
         }
 
-        // 5. prime check
+        // prime check
         public bool IsPrime(int number)
         {
             if (number <= 1) return false;
+
             int limit = (int)Math.Sqrt(number);
             for (int i = 2; i <= limit; i++)
                 if (number % i == 0) return false;
+
             return true;
         }
     }

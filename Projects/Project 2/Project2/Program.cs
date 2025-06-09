@@ -1,94 +1,78 @@
-﻿//Chica Gomes
-//Project 2 IN Progress 
+﻿// Chica Gomes
+// Project2 Finished
 //
-//Description: Create a class to store points from a cartesian coordinate system (x, y).
+//description: Create a class to store points from a cartesian coordinate system (x, y).
 // Create an operator overload to add 2 points together and return a point.
 // Create an operator to multiply a point with a scale and then return the point.
 // Create an operator to multiply 2 points together, same as you would add 2 points together.
 // Create a ToString method to return a string of a point.
 // Overload == and != to compare 2 points.
 // Create 2 points in Main and demonstrate your class and overloaded operators.
+//
 
 using System;
 
-public class Point
+namespace Project2
 {
-    public double X { get; set; }
-    public double Y { get; set; }
-
-    // Constructor
-    public Point(double x, double y)
+    public class Point
     {
-        X = x;
-        Y = y;
+        public double X { get; }
+        public double Y { get; }
+
+        public Point(double x, double y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        //operators
+
+        public static Point operator +(Point a, Point b) =>
+            new Point(a.X + b.X, a.Y + b.Y);
+
+        public static Point operator *(Point p, double k) =>
+            new Point(p.X * k, p.Y * k);
+
+        public static Point operator *(double k, Point p) => p * k;
+
+        public static Point operator *(Point a, Point b) =>
+            new Point(a.X * b.X, a.Y * b.Y);
+
+        //comparison
+
+        public static bool operator ==(Point a, Point b) =>
+            a.X == b.X && a.Y == b.Y;
+
+        public static bool operator !=(Point a, Point b) => !(a == b);
+
+        public override bool Equals(object? obj) =>
+            obj is Point p && this == p;
+
+        public override int GetHashCode() =>
+            HashCode.Combine(X, Y);
+
+        //print it out
+
+        public override string ToString() => $"({X}, {Y})";
     }
 
-    // Overload + to add two points
-    public static Point operator +(Point a, Point b)
+    public class Project2
     {
-        return new Point(a.X + b.X, a.Y + b.Y);
-    }
+        public static void Main()
+        {
+            var p1 = new Point(2, 3);
+            var p2 = new Point(4, 5);
 
-    // Overload * to scale a point by a scalar
-    public static Point operator *(Point p, double )
-    {
-        return new Point(p.X * , p.Y * ); //scale
-    }
+            Console.WriteLine($"Point 1: {p1}");
+            Console.WriteLine($"Point 2: {p2}\n");
 
-    // Overload * to multiply two points (component-wise)
-    public static Point operator *(Point a, Point b)
-    {
-        return new Point(a.X * b.X, a.Y * b.Y);
-    }
+            Console.WriteLine($"p1 + p2 = {p1 + p2}");
+            Console.WriteLine($"p1 * 2  = {p1 * 2}");
+            Console.WriteLine($"p1 * p2 = {p1 * p2}\n");
 
-    // Override ToString to display the point
-    public override string ToString()
-    {
-        return $"({X}, {Y})";
-    }
-
-    // Overload == operator
-    public static bool operator ==(Point a, Point b)
-    {
-        return a.X == b.X && 
-    }
-
-    // Overload != operator
-    public static bool operator !=(Point a, Point b)
-    {
-        return !(a == b);
-    }
-
-    // Ov
-    public override bool Equals(object obj)
-    {
-        
-        return false;
-    }
-
-    public override int // hash??
-    {
-        return //smthn
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Create two points
-        
-
-        // Demonstrate addition
-        
-
-        // Demonstrate scalar multiplication
-        
-
-        // Demonstrate point-wise multiplication
-        
-
-        // Demonstrate equality
-        
+            var copyOfP1 = new Point(2, 3);
+            Console.WriteLine($"p1 == copyOfP1 ? {p1 == copyOfP1}");
+            Console.WriteLine($"p1 != p2       ? {p1 != p2}");
+        }
     }
 }
