@@ -23,13 +23,13 @@ public class StudentProfile
         if (newAge > 0) Age = newAge;
     }
 
-    // Action #1 – quick intro
+    // Action – quick cute lil intro
     public void Introduce()
     {
         Console.WriteLine($"Aloha! I’m {Name}, a {Age}-year-old Computer Science major from Hawai‘i.");
     }
 
-    // Action #2 – show full profile block
+    // Action, show full profile block
     public void ShowProfile()
     {
         Console.WriteLine("——— Student Profile ———");
@@ -43,17 +43,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Object #1 – you
+        // Object me
         var chica = new StudentProfile("Chica", 21);
         chica.Introduce();
         chica.ShowProfile();
 
-        // Object #2 – classmate
+        // Object classmate
         var noah = new StudentProfile("Noah", 23);
         noah.Introduce();
 
         // Tweak classmate then display again
-        noah.UpdateName("NoaH K.");
+        noah.UpdateName("Noah K.");
         noah.UpdateAge(24);
         Console.WriteLine("Updated info:");
         noah.ShowProfile();
