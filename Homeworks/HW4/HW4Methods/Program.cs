@@ -73,38 +73,4 @@ namespace HW4Methods
             return true;
         }
     }
-
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            HW4Methods engineer = new HW4Methods();
-
-            // //Print engineer intro for Uncle John
-            // engineer.PrintEngineerIntro("Uncle John", 30);
-            //
-            // //Get RV status
-            // string status = engineer.GetRVStatus("Salt Lake City, Utah");
-            // Console.WriteLine(status);
-            //
-            // //Swap blueprint IDs
-            // string blueprint1 = "CP1950";
-            // string blueprint2 = "CP2025";
-            // // instance to swap
-            // Console.WriteLine($"Before swap: Blueprint A = {blueprint1}, Blueprint B = {blueprint2}");
-            // engineer.SwapBlueprintIDs(ref blueprint1, ref blueprint2);
-            // Console.WriteLine($"After swap: Blueprint A = {blueprint1}, Blueprint B = {blueprint2}");
-            //
-            // //Fibonacci calculation for n = 57 (birth year ode)
-            // int n = 57; 
-            // long fibNumber = engineer.CalculateFibonacci(n);
-            // Console.WriteLine($"The {n}th Fibonacci number is {fibNumber}");
-            //
-            // // Prime check
-            // int projectCode = 57; 
-            // bool isPrime = engineer.IsPrimeProjectCode(projectCode);
-            Console.WriteLine($"Project code is {name} {projectCode} is {(isPrime ? "a prime number" : "not a prime number")}");
-        }
-    }
 }
-```
