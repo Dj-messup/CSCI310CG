@@ -1,5 +1,5 @@
 ﻿// Chica Gomes
-// HW10Lists working on
+// HW10Lists working on.. check on privates if meets criteria?
 //
 // Create 2 lists of different types (one should be ints) and populate each list with some values
 // (the int should be at least 10). Write a method to insert a value into the list passed as a
