@@ -16,9 +16,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aae9d9cc-6a7c-4777-ba5c-76863eb014e2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="aae9d9cc-6a7c-4777-ba5c-76863eb014e2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +45,13 @@
     <setting file="file://$PROJECT_DIR$/Homeworks/HW1/HW1Types/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Homeworks/HW2/HW2Conditionals/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Homeworks/HW3/HW3Arrays/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Homeworks/HW4/HW4Methods/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/chicagomes/RiderProjects/CSCI310CG/Homeworks/HW4/HW4Methods/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Homeworks/HW5/HW5Classes/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Homeworks/HW6/HW6Inheritance/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Homeworks/HW7/HW7Polymorphism/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Homeworks/HW8/HW8OpOverloading/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Projects/Project 2/Project2/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -66,7 +70,13 @@
     &quot;.NET Project.HW1Types.executor&quot;: &quot;Run&quot;,
     &quot;.NET Project.HW2Conditionals.executor&quot;: &quot;Run&quot;,
     &quot;.NET Project.HW3Arrays.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.HW4Methods.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.HW5Classes.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.HW6Inheritance.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.HW7Polymorphism.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.HW8OpOverloading.executor&quot;: &quot;Run&quot;,
     &quot;.NET Project.Project 1.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Project2.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -80,7 +90,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.Project 1">
+  <component name="RunManager" selected=".NET Project.HW5Classes">
     <configuration name="HW1Types" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -328,6 +338,7 @@
       <workItem from="1749171240187" duration="305000" />
       <workItem from="1749171549408" duration="4503000" />
       <workItem from="1749187868196" duration="567000" />
+      <workItem from="1749446011054" duration="6218000" />
     </task>
     <task id="LOCAL-00001" summary="practicing pushes">
       <option name="closed" value="true" />
@@ -425,7 +436,63 @@
       <option name="project" value="LOCAL" />
       <updated>1749187779197</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="got confused">
+      <option name="closed" value="true" />
+      <created>1749446654868</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749446654868</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Typo">
+      <option name="closed" value="true" />
+      <created>1749446824142</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749446824142</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update">
+      <option name="closed" value="true" />
+      <created>1749447136532</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749447136532</updated>
+    </task>
+    <task id="LOCAL-00016" summary="typos again">
+      <option name="closed" value="true" />
+      <created>1749447244513</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1749447244513</updated>
+    </task>
+    <task id="LOCAL-00017" summary="hw5 done?">
+      <option name="closed" value="true" />
+      <created>1749447950587</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749447950587</updated>
+    </task>
+    <task id="LOCAL-00018" summary="hw 6 done?">
+      <option name="closed" value="true" />
+      <created>1749448178749</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749448178749</updated>
+    </task>
+    <task id="LOCAL-00019" summary="should be finally good">
+      <option name="closed" value="true" />
+      <created>1749452368687</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749452368687</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +547,14 @@
     <MESSAGE value="ReadMe" />
     <MESSAGE value="HW4 Progress" />
     <MESSAGE value="comp @ 4% save push" />
-    <option name="LAST_COMMIT_MESSAGE" value="comp @ 4% save push" />
+    <MESSAGE value="got confused" />
+    <MESSAGE value="Typo" />
+    <MESSAGE value="update" />
+    <MESSAGE value="typos again" />
+    <MESSAGE value="hw5 done?" />
+    <MESSAGE value="hw 6 done?" />
+    <MESSAGE value="should be finally good" />
+    <option name="LAST_COMMIT_MESSAGE" value="should be finally good" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,19 +571,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Homeworks/HW4/HW4Methods/Program.cs</url>
-          <line>105</line>
-          <properties documentPath="$PROJECT_DIR$/Homeworks/HW4/HW4Methods/Program.cs" containingFunctionPresentation="Method 'Main'">
-            <startOffsets>
-              <option value="3889" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4005" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
