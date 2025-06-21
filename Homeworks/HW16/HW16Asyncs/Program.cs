@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace HW16Async
 {
-    class Program
+    class HW16Asyncs
     {
         // sync: print square of each number from 1 to max (delay 50ms)
         static void PrintSquares(int max)
         {
             for (int i = 1; i <= max; i++)
             {
-                Console.WriteLine($"square {i}: {i * i}");
+                Console.WriteLine($"squares {i}: {i * i}");
                 Task.Delay(50).Wait();
             }
         }
@@ -27,7 +27,7 @@ namespace HW16Async
         {
             for (int i = 1; i <= max; i++)
             {
-                Console.WriteLine($"cube   {i}: {i * i * i}");
+                Console.WriteLine($"cubes   {i}: {i * i * i}");
                 await Task.Delay(100);
             }
         }

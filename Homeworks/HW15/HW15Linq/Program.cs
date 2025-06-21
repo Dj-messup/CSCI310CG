@@ -4,9 +4,9 @@
 // description: 
 //
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+//using System; // if using older version : 
+//using System.Collections.Generic;
+//using System.Linq;
 
 namespace HW15Linq
 {
@@ -38,7 +38,7 @@ namespace HW15Linq
             //join two lists to find common elements
             var listA = new List<int> { 2, 4, 6, 8, 10 };
             var listB = new List<int> { 5, 6, 7, 8, 9 };
-            var common = listA.Join(listB, a => a, b => b, (a, b) => a);
+            var common = listA.Join(listB, a => a, b => b, (a, b) => a); // parameter B never used error?
             Console.WriteLine("common between A and B: " + string.Join(", ", common));
 
             //skip first 5 and take next 5 (6–10)
