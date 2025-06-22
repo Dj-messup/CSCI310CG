@@ -1,7 +1,7 @@
 ﻿// Chica Gomes
 // HW15 In Progress
 //
-// description: 
+// description:Create at least 5 different examples using LINQ and Lambda expressions. Demonstrate all of them working.
 //
 
 //using System; // if using older version : 
@@ -10,7 +10,7 @@
 
 namespace HW15Linq
 {
-    class Program
+    class HW15Linq
     {
         static void Main()
         {
